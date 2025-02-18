@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deudas</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="k0i003o.html">Transacciones</a>
+      <a class="active">Deudas</a><br /><br />
+    </nav>
+    <div
+      id="notification"
+      style="
+        display: none;
+        justify-content: center;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #000000;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        opacity: 0.9;
+        z-index: 1000;
+        font-size: 14px;
+      "
+    ></div>
+    <div id="container">
+      <h1>Deudas de los Clientes</h1>
+
+      <button id="newEntry">Agregar +</button>
+      <!-- Entries will be dynamically inserted here -->
+    </div>
+    <br />
+    <span hidden="hidden" style="font-weight: bold" id="calculation"></span>
+    <button id="copyButton">Copiar Todo</button>
+    <br />
+    <script src="script2.js"></script>
+  </body>
+</html>

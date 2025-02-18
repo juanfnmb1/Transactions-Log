@@ -1,0 +1,100 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  margin: 5px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a.active {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+#newEntry {
+  width: 45%;
+}
+#eliminarTodo {
+  width: 45%;
+}
+div {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Keep the form elements together */
+}
+button {
+  margin: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  color: white;
+}
+
+button {
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  opacity: 0.8;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.transaction-paragraph {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.transaction-paragraph button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.transaction-paragraph button:hover {
+  background-color: #c82333;
+}
+input[type="text"],
+input[type="number"] {
+  font-size: 16px;
+  width: 50%; /* Make inputs take the full width of their container */
+  padding: 10px;
+  box-sizing: border-box;
+}
+#copyButton {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(68, 131, 5);
+  color: white;
+  width: 200px;
+}

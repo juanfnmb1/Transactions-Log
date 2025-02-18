@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copiado2 - Transacciones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+    }
+    pre {
+      white-space: pre-wrap; /* Makes text wrap within the container */
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    .notification {
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+      text-align: center;
+      display: none;
+    }
+    #returnButton {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto;
+    }
+    #returnButton:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Transacciones Copiadas</h1>
+  <p>Selecciona el texto abajo y copia.</p>
+  
+  <pre id="transactionData"></pre>
+
+  <div id="notification" class="notification"></div>
+
+  <!-- Return button -->
+  <button id="returnButton">Regresar</button>
+
+  <script>
+    // Get the 'transactions' parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const transactions = urlParams.get('transactions');
+
+    // Display the transactions in the pre element
+    if (transactions) {
+      document.getElementById('transactionData').textContent = decodeURIComponent(transactions);
+    } else {
+      document.getElementById('transactionData').textContent = "No hay transacciones para mostrar.";
+    }
+
+    // Notification display function
+    function showNotification(message) {
+      const notification = document.getElementById("notification");
+      notification.textContent = message;
+      notification.style.display = "block";
+
+      setTimeout(() => {
+        notification.style.display = "none";
+      }, 3000);
+    }
+
+    // Return button functionality
+    document.getElementById("returnButton").onclick = () => {
+      // Redirect to the previous page or a specific page (e.g., index.html)
+      window.location.href = "iwiw93977.html";  // Modify the URL as needed
+    };
+  </script>
+
+</body>
+</html>
